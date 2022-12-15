@@ -1,5 +1,5 @@
 import { getInfo3 } from '../lib/process-recipe';
-import Link from "Next/Link";
+import Link from "next/link";
 
 export async function getStaticProps() {
   // set variable to hold data

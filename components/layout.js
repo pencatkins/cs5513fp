@@ -1,5 +1,5 @@
 import Head from "Next/Head";
-import Link from "Next/Link";
+import Link from "next/link";
 
 export default function Layout( { children, home } ) {
   return (
