@@ -1,0 +1,163 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+header nav {
+  position: fixed;
+}
+
+svg {
+  color: #0756f5;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  min-height: 10vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li a.nav-link:hover, li a.nav-link:active, li a.nav-link:visited, li a.nav-link:focus {
+  background-color: rgb(245, 178, 245)!important;
+  border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a.navbar-brand {
+  width: 50vw;
+  margin-left: 5%;
+  display: inline-flex;
+}
+
+h1 {
+  color: #2727b5;
+  font-size: 1rem!important;
+  padding-top: 8px;
+  padding-left: 7px;
+  
+}
+
+h1.logo-name {
+  font-weight: bold;
+  font-size: 1.25em!important;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem!important;
+}
+
+nav ul {
+  font-weight: bold;
+  width: 95vw;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  position: relative;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+
+.card {
+box-shadow: 5px 5px 15px 5px #949494;
+color: white;
+width: 100vw;
+}
+
+.card.dyn {
+  color: rgb(48, 46, 46);
+}
+
+.ingredient-list ul {
+  margin-left: 15%;
+}
+
+.feat-img {
+  display: block;
+  margin: 5% 10%;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+
+  a.navbar-brand {
+    width: 20vw;
+    margin-left: 5%;
+    display: inline-flex;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  main {
+    justify-content: center;
+  }
+
+  a.navbar-brand {
+    width: 50vw;
+    margin-left: 5%;
+  }
+
+  nav ul {
+    width: 95vw;
+    font-size: 1.5em;
+  }
+
+  .card {
+    width: 40vw;
+    }
+}
+
+@media (min-width: 992px) { 
+
+  main {
+    justify-content: center;
+  }
+
+  a.navbar-brand {
+    width: 20vw;
+    margin-left: 5%;
+  }
+
+  nav ul {
+    width: 40vw;
+    font-size: 1.5em;
+    margin-left: 40%;
+  }
+
+  .card {
+    width: 33vw;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  main {
+    justify-content: center;
+  }
+
+  nav ul {
+    width: 35vw;
+    font-size: 1.5em;
+    margin-left: 55%;
+  }
+
+
+
+}
