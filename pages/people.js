@@ -1,4 +1,5 @@
 import { getInfo } from '../lib/process-contact';
+import Link from "Next/Link";
 
 export async function getStaticProps() {
   // set variable to hold data
@@ -25,7 +26,7 @@ export default function Home({allInfo}) {
                 <div className="card-body">
                   <h3 className="card-header">{params.title}</h3>
                   <p className="mt-4">Name: {params.fname}&nbsp;{params.lname}</p>
-                      <a className="reach-out btn btn-secondary mt-3" href={`/people/${params.id}`}>More info</a>
+                      <Link href={`/people/${params.id}`}><a className="reach-out btn btn-secondary mt-3">More info</a></Link>
                 </div>
               </div>
           )

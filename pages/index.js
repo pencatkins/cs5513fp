@@ -32,7 +32,7 @@ export default function Home({allInfo, allInfo2, allInfo3}) {
                 <div className="card-body">
                   <h3 className="card-header">{params.title}</h3>
                   <p className="mt-4">Name: {params.fname}&nbsp;{params.lname}</p>
-                      <a className="reach-out btn btn-secondary mt-3" href={`/people/${params.id}`}>More info</a>
+                      <Link href={`/people/${params.id}`}><a className="reach-out btn btn-secondary mt-3">More info</a></Link>
                 </div>
               </div>
           )
@@ -45,7 +45,7 @@ export default function Home({allInfo, allInfo2, allInfo3}) {
                 <div className="card-body">
                   <h3 className="card-header">{params.title}</h3>
                   <p className="mt-4">Category: {params.category}</p>
-                      <a className="reach-out btn btn-secondary mt-3" href={`/goals/${params.id}`}>More info</a>
+                      <Link href={`/goals/${params.id}`}><a className="reach-out btn btn-secondary mt-3" >More info</a></Link>
                 </div>
               </div>
           )
@@ -58,7 +58,7 @@ export default function Home({allInfo, allInfo2, allInfo3}) {
                 <div className="card-body">
                   <h3 className="card-header">{params.title}</h3>
                   <p className="mt-4">Recipe: {params.recipe}</p>
-                      <a className="reach-out btn btn-secondary mt-3" href={`/recipes/${params.id}`}>More info</a>
+                      <Link href={`/recipes/${params.id}`}><a className="reach-out btn btn-secondary mt-3">More info</a></Link>
                 </div>
               </div> 
           )
